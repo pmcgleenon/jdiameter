@@ -28,8 +28,7 @@ import java.util.Date;
 
 /**
  * The Avp class implements a Diameter AVP. This class allows applications to build and read arbitrary Diameter AVP objects.
- * Wrapper interface allows adapt message to any driver vendor specific interface Serializable interface allows use this class
- * in SLEE Event objects
+ * Wrapper interface allows adapt message to any driver vendor specific interface Serializable interface allows use this class in SLEE Event objects
  * 
  * @version 1.5.1 Final
  * @author erick.svenson@yahoo.com
@@ -2283,7 +2282,9 @@ public interface Avp extends Wrapper, Serializable {
      */
     public static final int TGPP2_MEID = 1471;
 
-    // SLh interface (GMLC - HSS) AVPs (3GPP TS 29.173)
+    /********************************************************/
+    /*** SLh interface (GMLC - HSS) AVPs (3GPP TS 29.173) ***/
+    /********************************************************/
 
     /**
      * SLh (3GPP TS 29.173) LMSI AVP code
@@ -2360,14 +2361,19 @@ public interface Avp extends Wrapper, Serializable {
      */
     public static final int TGPP_AAA_SERVER_NAME = 318;
 
-    /*
-     * SLh re-used Diameter AVPs: MSISDN 3GPP TS 29.329; SGSN-Number 3GPP TS 29.272; Supported-Features 3GPP TS 29.229;
-     * Feature-List-ID 3GPP TS 29.229; Feature-List 3GPP TS 29.229; GMLC-Number 3GPP TS 29.272; 3GPP-AAA-Server-Name 3GPP TS
-     * 29.273
-     */
+    // SLh re-used Diameter AVPs:
+    // MSISDN 3GPP TS 29.329;
+    // SGSN-Number 3GPP TS 29.272;
+    // Supported-Features 3GPP TS 29.229;
+    // Feature-List-ID 3GPP TS 29.229;
+    // Feature-List 3GPP TS 29.229;
+    // GMLC-Number 3GPP TS 29.272;
+    // 3GPP-AAA-Server-Name 3GPP TS 29.273
 
-    // SLg interface (GMLC - MME) AVPs (3GPP TS 29.172)
-    // Diameter ELP Application (EPC LCS Protocol)
+    /********************************************************/
+    /*** SLg interface (GMLC - MME) AVPs (3GPP TS 29.172) ***/
+    /*** Diameter ELP Application (EPC LCS Protocol) ***/
+    /********************************************************/
 
     /**
      * SLg (3GPP TS 29.172) SLg-Location-Type AVP code
@@ -2674,14 +2680,24 @@ public interface Avp extends Wrapper, Serializable {
      */
     public static final int VISITED_PLMN_ID = 1407;
 
-    /*
-     * Diameter ELP Application (SLg) reused AVPs: LCS-Format-Indicator 1237 3GPP TS 32.299; LCS-Name-String 1238 3GPP TS
-     * 32.299; LCS-Client-Type 1241 3GPP TS 32.299 LCS-Requestor-Id-String 1240 3GPP TS 32.299; Location-Estimate 1242 3GPP TS
-     * 32.299; IMEI 1402 3GPP TS 29.272; MSISDN 701; 3GPP TS 29.329; Service-Selection 493 3GPP TS 29.272, IETF RFC 5778
-     * User-Name 1 IETF RFC 3588; Supported-Features 628 3GPP TS 29.229; Feature-List-ID 629 3GPP TS 29.229; Feature-List 630
-     * 3GPP TS 29.229; Serving-Node 2401 3GPP TS 29.173; Cell-Global-Identity 1604 3GPP TS 29.272; Service-Area-Identity 1607
-     * 3GPP TS 29.272; GMLC-Address 2405 3GPP TS 29.173; Visited-PLMN-Id 1407 3GPP TS 29.272.
-     */
+    // Diameter ELP Application (SLg) reused AVPs:
+    // LCS-Format-Indicator 1237 3GPP TS 32.299;
+    // LCS-Name-String 1238 3GPP TS 2.299;
+    // LCS-Client-Type 1241 3GPP TS 32.299
+    // LCS-Requestor-Id-String 1240 3GPP TS 32.299;
+    // Location-Estimate 1242 3GPP TS 32.299;
+    // IMEI 1402 3GPP TS 29.272;
+    // MSISDN 701 3GPP TS 29.329;
+    // Service-Selection 493 3GPP TS 29.272, IETF RFC 5778
+    // User-Name 1 IETF RFC 3588;
+    // Supported-Features 628 3GPP TS 29.229;
+    // Feature-List-ID 629 3GPP TS 29.229;
+    // Feature-List 630 3GPP TS 29.229;
+    // Serving-Node 2401 3GPP TS 29.173;
+    // Cell-Global-Identity 1604 3GPP TS 29.272;
+    // Service-Area-Identity 1607 3GPP TS 29.272;
+    // GMLC-Address 2405 3GPP TS 29.173;
+    // Visited-PLMN-Id 1407 3GPP TS 29.272
 
     /**
      * @return the AVP code.
